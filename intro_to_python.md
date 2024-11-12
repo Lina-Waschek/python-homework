@@ -173,3 +173,25 @@ italy_gdp = GDP_2018.pop("Italy")
 print(GDP_2018)
 print(italy_gdp, "trillion USD")
 ```
+
+# Python Slicing Exercises
+
+## Exercise 17-a
+### Description
+Slice the word until first "a". (Tosc)
+### Code Answer
+```python
+wrd="Toscana"
+ans_1= wrd[:4]
+print(ans_1)
+```
+## Exercise 17-b
+### Description
+Slice the word so that you get "cana".
+### Code Answer
+```python
+wrd="Toscana"
+ans_1= wrd[3:]
+print(ans_1)
+```
+
