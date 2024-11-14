@@ -195,3 +195,46 @@ ans_1= wrd[3:]
 print(ans_1)
 ```
 
+# Python If, Elif, Else Exercises
+
+## Exercise 7-a
+### Description
+Write an if statement that asks for the user's name via input() function. If the name is "Bond" make it print "Welcome on board 007." Otherwise make it print "Good morning NAME". 
+### Code Answer
+```python
+name = input("Please enter your name: ")
+
+if name == "Bond":
+    print("Welcome on board 007.")
+else:
+    print("Good morning " + name)
+```
+Input: Please enter your name: Lina
+Result: Good morning Lina
+
+## Exercise 7-b
+### Description
+Do the same thing as exercise 7-a this time making sure if the name is bond with lower case b it still prints "Welcome on board 007."
+### Code Answer
+```python
+name = input("Please enter your name.")
+
+if name.lower() == "bond":
+    print("Welcome on board 007")
+else:
+    print("Good morning " + name)
+```
+Input: Please enter your name: bond
+Result: Welcome on board 007
+
+## Exercise 7-c
+### Description
+Write a function named "evens" which returns True if a number is even and otherwise returns False.
+### Code Answer
+```python
+def evens(i):
+if i % 2 ==0:
+    return True
+else:
+    return False
+```
