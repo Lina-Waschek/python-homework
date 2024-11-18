@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+
+from util import read_input 
+
 #first read the file
     
 filepath = "rosalind-data/ini5-data.txt"
