@@ -1,3 +1,4 @@
 rosalind-data/*
 .DS_Store
 */__pycache__
+aoc_data/*
