@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 # open the data as two lists 
 # function spli_data: The function takes a text, splits it into lines, and then splits each line into two numbers. 
 # These numbers are stored in two separate lists (left_list and right_list), and the function returns both of these lists.
