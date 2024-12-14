@@ -46,3 +46,25 @@ def read_fasta2(filepath):
         if current_sequence:  
             seq.append(current_sequence)
     return seq  
+
+
+# make a dictionary with ID (as the key) and sequence (as the value) pairs
+def fasta_pair(filepath):
+    sequences = {}  # empty dictionary
+    current_id = ""
+
+    # read the file line by line
+    with open(filepath, 'r') as file:
+        for line in file:
+            line = line.strip()  # remove unnecessary whitespace and line breaks
+            if line.startswith(">"):
+                # this line is a header
+                header = line
+                current_id = header[1:]  # remove the ">" to get the ID
+                sequences[current_id] = ""  # initialize an empty sequence for this ID
+            else:
+                # this is a sequence
+                sequence = line
+                sequences[current_id] += sequence  # append the sequence to the current ID
+    
+    return sequences

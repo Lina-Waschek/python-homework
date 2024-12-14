@@ -44,11 +44,14 @@ def find_reverse_palindromes(dna):
                 results.append((i + 1, length)) # +1 to get 1 based positions
     return results
 
-# find all reverse palindromes in the DNA sequence
-palindromes = find_reverse_palindromes(DNA)
+def main():
+    # find all reverse palindromes in the DNA sequence
+    palindromes = find_reverse_palindromes(DNA)
 
-# 3) Print the position and length of each palindrome
-for position, length in palindromes:
-    print(position, length)
+    # 3) Print the position and length of each palindrome
+    for position, length in palindromes:
+        print(position, length)
 
 
+if __name__ == '__main__':
+    main()
