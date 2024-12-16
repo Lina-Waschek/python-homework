@@ -68,3 +68,4 @@ def fasta_pair(filepath):
                 sequences[current_id] += sequence  # append the sequence to the current ID
     
     return sequences
+
